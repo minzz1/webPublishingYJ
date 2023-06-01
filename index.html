@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--캐러셀  step2>제이쿼리 및 bxslider 라이브러리 및 css 삽입-->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <title>대구 국비지원 무료교육 영진직업전문학교</title>
+    <script>
+        $(document).ready(function(){
+          $(".slider").bxSlider({
+            slidewidth: 1800,
+            captions: true,
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true
+          });
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <div id="header_top">
+            <nav  id="header_gnb">
+                <ul>
+                    <li><a href="#">학생관리</a></li>
+                    <li><a href="#">NCS평가</a></li>
+                    <li><a href="#">시험응시</a></li>
+                    <li><a href="#">정보수정</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header_bottom">
+            <div class="wrapper">
+                <div id="toggle">
+                    <img src="./images/Hamburger_icon.svg.png" alt="메뉴 토글" width="40px">
+                </div>
+                <div id="title">
+                    <img src="./images/LOGO_.png" alt="영진직업전문학교 로고">
+                </div>
+                <nav id="header_lnb">
+                    <ul>
+                        <li><a href="#">모집과정</a></li>
+                        <li><a href="#">입학상담</a></li>
+                        <li><a href="#">과정소개</a></li>
+                        <li><a href="#">취업센터</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="./sub.html">학교소개</a></li>
+                    </ul>
+                </nav>
+                <div id="phone">
+                    <img src="./images/main_tel.png" alt="전화로고이미지" width="40px">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="contents">
+        <div id="mainimage_wrapper">
+            <div class="wrapper">
+                <!--캐러셀 step1>(beslider) 구현을 위한 레이아웃 구조-->
+                <div class="slider">
+                    <div class="mainimage"><img src="./images/mainimage01.JPG"/></div>
+                    <div class="mainimage"><img src="./images/mainimage02.JPG"/></div>
+                    <div class="mainimage"><img src="./images/mainimage03.JPG"/></div>
+                    <div class="mainimage"><img src="./images/mainimage04.JPG"/></div>
+                    <div class="mainimage"><img src="./images/mainimage05.JPG"/></div>
+                </div>
+            </div>
+        </div>
+        <div id="class_wrapper">
+            <div class="wrapper" id="class_tab">
+                <input id="class_first" type="radio" name="class_tab" checked="checked" />
+                <input id="class_second" type="radio" name="class_tab"  />
+                <input id="class_third" type="radio" name="class_tab"  />
+                <input id="class_fourth" type="radio" name="class_tab"  />
+                <input id="class_fifth" type="radio" name="class_tab"  />
+                <input id="class_sixth" type="radio" name="class_tab"  />
+                <section class="class_buttons">
+                    <label for="class_first">전체과정</label>
+                    <label for="class_second">IT / SW</label>
+                    <label for="class_third">전기PLC</label>
+                    <label for="class_fourth">기계설계</label>
+                    <label for="class_fifth">디자인</label>
+                    <label for="class_sixth">용접</label>
+                </section>
+                <div class="class_tab_item">
+                    <img src="./images/class_tab_item01.png"/>
+                    <img src="./images/class_tab_item02.png"/>
+                    <img src="./images/class_tab_item05.png"/>
+                    <img src="./images/class_tab_item07.png"/>
+                </div>
+                <div class="class_tab_item">
+                    <img src="./images/class_tab_item01.png"/>
+                    <img src="./images/class_tab_item02.png"/>
+                    <img src="./images/class_tab_item03.png"/>
+                    <img src="./images/class_tab_item04.png"/>
+                </div>
+                <div class="class_tab_item">
+                    <img src="./images/class_tab_item05.png"/>
+                </div>
+                <div class="class_tab_item">
+                    <img src="./images/class_tab_item05.png"/>
+                    <img src="./images/class_tab_item06.png"/>
+                </div>
+                <div class="class_tab_item">디자인 탭 내용</div>
+                <div class="class_tab_item">용접 탭 내용</div>
+            </div>
+        </div>
+        <div id="edu_wrapper">
+            <div class="wrapper" id="tab">
+                <input id="first" type="radio" name="tab" checked="checked"/>
+                <input id="second" type="radio" name="tab" />
+                <section class="buttons">
+                    <label for="first">구직자를 위한 교육</label>
+                    <label for="second">직장인을 위한 교육</label>
+                </section>
+                <div class="tab_item">
+                <img src="images/edu_tab_item01.png"/>
+                </div>
+                <div class="tab_item">
+                    <img src="./images/edu_tab_item02.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_wrapper">
+            <div class="wrapper">
+                <div id="footer_top">
+                    <span><a href="#">개인정보보호정책</a></span>
+                    <span><a href="#">메일주소무단수집거부</a></span>
+                </div>
+                <div id="footer_bottom">
+                    <span>회사명 : 영진직업전문학교</span>
+                    <span>대표자 : 곽승호, 차영숙 </span>
+                    <span><img src="./images/footer_email.png"/> Tel : 053-983-8877</span>
+                    <span>Fax : 053-722-2423</span>
+                    <span>개인정보보호책임자 : 이동석</span>
+                    <span><img src="./images/footer_email.png"/> Tel : 053-983-8877</span>
+                    <span>사업자번호 : 502-95-07029701-835 대구광역시 동구 화랑로 525(용계동), 조경실습장 : 대구 동구 도동 806-21</span>
+                    <br/><span>copyright © 대구국비지원 무료교육센터 영진직업전문학교. All Rights Reserved.</span>
+                </div>
+                <div id="footer_bottom_icon">
+                    <span><img src="./images/footer_sns01.png"/></span>
+                    <span><img src="./images/footer_sns02.png"/></span>
+                    <span><img src="./images/footer_sns03.png"/></span>
+                    <span><img src="./images/footer_sns04.png"/></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

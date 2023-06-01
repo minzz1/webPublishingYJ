@@ -1,0 +1,170 @@
+/* 초기화 */
+* { 
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+/* 공통 부분 */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+
+/* 헤더 부분 */
+header{ 
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 1px solid #ccc;
+}
+header #header_top {
+    padding-top: 20px;
+
+}
+header #header_top nav ul {
+    /* width: 600px; */
+    text-align: right;
+    padding-right: 10%;
+}
+header #header_top nav ul li {
+    padding: 10px 12px;
+}
+header #header_top nav ul li a {
+    color: rgb(65, 65, 65);
+    font-size: 10pt;
+}
+header #header_bottom {
+    padding-top: 20px;
+}
+header #header_bottom .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+header #header_bottom #header_lnb ul li {
+    padding: 13px 30px;
+}
+header #header_bottom #header_lnb ul li a {
+    color: #111;
+    font-size: 14pt;
+    font-weight: bold;
+}
+header #header_bottom #toggle {
+    display: none;
+}
+header #header_bottom #phone {
+    display: none;
+}
+
+/* 콘텐츠 부분 */
+#contents {
+    background-color: #eee;
+    padding-top: 135px;
+}
+#contents #mainimage_wrapper {
+    background-color: black;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+#contents #class_wrapper{
+    background-color: #eee;
+}
+/*탭 메뉴*/
+/*첫번째 탭 _ 모집중인 과정 */
+#contents #class_wrapper .wrapper input {
+    display: none;
+}
+#contents #class_wrapper .wrapper input ~ div {
+    display: none;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(1):checked ~ div:nth-of-type(1){display: block;}
+#contents #class_wrapper .wrapper input:nth-of-type(2):checked ~ div:nth-of-type(2){display: block;}
+#contents #class_wrapper .wrapper input:nth-of-type(3):checked ~ div:nth-of-type(3){display: block;}
+#contents #class_wrapper .wrapper input:nth-of-type(4):checked ~ div:nth-of-type(4){display: block;}
+#contents #class_wrapper .wrapper input:nth-of-type(5):checked ~ div:nth-of-type(5){display: block;}
+#contents #class_wrapper .wrapper input:nth-of-type(6):checked ~ div:nth-of-type(6){display: block;}
+
+
+/* 탭 모양 구성 */
+/*자식이 float 속성을 가지면 부모는 overflow 속성을 가져야 함 */
+#class_tab section {overflow: hidden;}
+#class_tab section label {
+    /*크기 및 글자 위치 지정*/
+    display: block; float: left; /*블럭 지정/ 가로 정렬*/
+    width: 200px; height: 50px;
+    border: 1px solid gray;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    color: #555;
+    font-weight: bold;
+}
+#class_tab input:nth-of-type(1):checked ~ section label:nth-child(1){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+#class_tab input:nth-of-type(2):checked ~ section label:nth-child(2){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+#class_tab input:nth-of-type(3):checked ~ section label:nth-child(3){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+#class_tab input:nth-of-type(4):checked ~ section label:nth-child(4){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+#class_tab input:nth-of-type(5):checked ~ section label:nth-child(5){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+#class_tab input:nth-of-type(6):checked ~ section label:nth-child(6){border-bottom: 3px solid #0d5fb6; color: #0d5fb6;}
+
+#class_tab .class_tab_item {
+    text-align: center;
+}
+#class_tab .class_tab_item img {
+    width: 24%;
+}
+#contents #edu_wrapper {
+    border: 1px solid seagreen;
+    background-color: white;
+}
+
+/*탭 모양 2 */
+#contents #edu_wrapper #tab input {
+    display: none;
+}
+#contents #edu_wrapper #tab input ~ div {
+    display: none;
+}
+#contents #edu_wrapper #tab input:nth-of-type(1):checked ~ div:nth-of-type(1){
+    display: block;
+}
+#contents #edu_wrapper #tab input:nth-of-type(2):checked ~ div:nth-of-type(2){
+    display: block;
+}
+#contents #edu_wrapper #tab input:nth-of-type(1):checked ~ section label:nth-of-type(1){
+    border-bottom: 4px solid #106aca; color: #106aca;
+}
+#contents #edu_wrapper #tab input:nth-of-type(2):checked ~ section label:nth-of-type(2){
+    border-bottom: 4px solid #106aca; color: #106aca;
+}
+#tab section {overflow: hidden;}
+#tab section label {
+    display: block; float: left;
+    border: 1px solid black;
+    width: 500px; height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+/* 푸터 부분 */
+footer {
+    height: 190px;
+    background-color: #333;
+    color: #eee;
+}
+.wrapper #footer_top {
+    padding: 10px 0;
+}
+.wrapper #footer_top span a {
+    color: #ccc;
+}
+.wrapper #footer_bottom span {
+    color: #aaa;
+}
+.wrapper #footer_bottom_icon img {
+    width: 40px;
+    padding-top: 10px;
+}
